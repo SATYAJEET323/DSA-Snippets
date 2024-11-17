@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dsa-snippets/static/css/main.b5f6a9fe.css",
-    "main.js": "/dsa-snippets/static/js/main.c1997134.js",
-    "static/js/453.7b964054.chunk.js": "/dsa-snippets/static/js/453.7b964054.chunk.js",
-    "index.html": "/dsa-snippets/index.html",
-    "main.b5f6a9fe.css.map": "/dsa-snippets/static/css/main.b5f6a9fe.css.map",
-    "main.c1997134.js.map": "/dsa-snippets/static/js/main.c1997134.js.map",
-    "453.7b964054.chunk.js.map": "/dsa-snippets/static/js/453.7b964054.chunk.js.map"
+    "main.css": "/DSA-Snippets/static/css/main.b5f6a9fe.css",
+    "main.js": "/DSA-Snippets/static/js/main.913384f8.js",
+    "static/js/453.7b964054.chunk.js": "/DSA-Snippets/static/js/453.7b964054.chunk.js",
+    "index.html": "/DSA-Snippets/index.html",
+    "main.b5f6a9fe.css.map": "/DSA-Snippets/static/css/main.b5f6a9fe.css.map",
+    "main.913384f8.js.map": "/DSA-Snippets/static/js/main.913384f8.js.map",
+    "453.7b964054.chunk.js.map": "/DSA-Snippets/static/js/453.7b964054.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5f6a9fe.css",
-    "static/js/main.c1997134.js"
+    "static/js/main.913384f8.js"
   ]
 }
