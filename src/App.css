@@ -1,0 +1,493 @@
+/* Global styles */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00e676;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Dropdown styles */
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.dropdown-label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.dropdown {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #00e676;
+}
+
+/* Code card styles */
+.code-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.code-card {
+  background-color: #2b2b3b;
+  border: 2px solid #00e676;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.code-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.code-content {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  max-height: 150px;
+}
+
+/* Difficulty tag styles */
+.difficulty-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.easy {
+  background-color: #00e676;
+  color: #000;
+}
+
+.medium {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.hard {
+  background-color: #ff1744;
+  color: #000;
+}
+/* Code Card Styles  */
+ /* .code-card {
+   display: flex; 
+  margin: 20px 0;
+  border-radius: 8px;
+   overflow: hidden;
+  background-color: #1e1e2f;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+} */
+/* 
+.code-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}  */
+
+/* Sidebar Styles */
+.code-card-sidebar {
+  width: 10px;
+  height: 100%;
+}
+
+.code-card-sidebar.easy {
+  background-color: #4caf50; /* Green for easy */
+}
+
+.code-card-sidebar.medium {
+  background-color: #ffeb3b; /* Yellow for medium */
+}
+
+.code-card-sidebar.hard {
+  background-color: #f44336; /* Red for hard */
+}
+
+/* Code Card Content */
+.code-card-content {
+  flex: 1;
+  padding: 20px;
+  color: #f5f5f5;
+}
+
+.code-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.code-content {
+  background-color: #282c34;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #00e676;
+  overflow-x: auto;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Details Section */
+.code-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.difficulty-tag {
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.difficulty-tag.easy {
+  background-color: #4caf50;
+}
+
+.difficulty-tag.medium {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.difficulty-tag.hard {
+  background-color: #f44336;
+}
+
+.language-tag {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+/* Search Button Styles */
+.search-input {
+  width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #282c34;
+  color: #00e676;
+}
+
+.search-button {
+  background-color: #00e676; /* Bright green for the button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #4caf50; /* Darker green when hovered */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.search-button:focus {
+  outline: none; /* Remove the default focus outline */
+}
+/* Footer Styles */
+.footer {
+  background-color: #1e1e2f; /* Dark background */
+  color: #f5f5f5; /* Light text color */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px; /* Add margin from body */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Box shadow for a nice effect */
+  border-top: 3px solid #4caf50; /* Green border at the top for better separation */
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Links Container */
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #00e676;
+  text-decoration: none;
+  margin: 0 15px; /* Add margin between the links */
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect on Links */
+.footer-links a:hover {
+  color: #4caf50; /* Darker green when hovered */
+}
+
+/* Separator between Links */
+.footer-links a:not(:last-child)::after {
+  content: '|'; /* Add separator between links */
+  margin: 0 10px;
+  color: #f5f5f5; /* Light color for the separator */
+}
+
+/* Focus styling for links */
+.footer-links a:focus {
+  outline: none;
+}
+/* Hamburger Menu Button */
+.menu-button {
+  background-color: #00e676;
+  color: white;
+  font-size: 30px;
+  border: none;
+  padding: 8px 12px; /* Reduced padding to make the button smaller */
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease; /* Add smooth transition for transformation */
+  border: 2px solid transparent; /* Initial border (transparent) */
+}
+
+/* Hover State for Animation */
+.menu-button:hover {
+  background-color: #4caf50;
+  transform: scale(1.1) rotate(90deg); /* Scale up and rotate on hover */
+  animation: pulse-border 1s infinite; /* Add pulse border animation */
+}
+
+/* Active State for Button (when clicked) */
+.menu-button:active {
+  transform: scale(0.95) rotate(-90deg); /* Shrink and rotate back */
+}
+
+/* Pulse Border Animation */
+@keyframes pulse-border {
+  0% {
+    border-color: transparent; /* Start with no visible border */
+  }
+  50% {
+    border-color: #00e676; /* Pulse effect: border turns green */
+  }
+  100% {
+    border-color: transparent; /* End with no border */
+  }
+}
+
+/* Sidebar Menu */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hide the sidebar */
+  width: 250px;
+  height: 100%;
+  background-color: #282c34;
+  padding-top: 60px; /* Space for the menu */
+  transition: 0.3s; /* Smooth transition for sliding effect */
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0; /* When the menu is open, slide in */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 20px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #00e676;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  border-top: 3px solid #4caf50;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #00e676;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #4caf50;
+}
+
+/* Media Queries for Small Screens */
+@media only screen and (max-width: 768px) {
+  /* Adjust hamburger button size */
+  .menu-button {
+    font-size: 24px; /* Smaller font size */
+    padding: 6px 10px; /* Smaller padding */
+  }
+
+  /* Adjust the sidebar menu size */
+  .sidebar {
+    width: 200px; /* Reduce width of the sidebar */
+  }
+
+  /* Adjust the links in the menu */
+  .menu a {
+    font-size: 1rem; /* Reduce font size */
+  }
+
+  /* Adjust footer text size */
+  .footer {
+    font-size: 0.8rem; /* Smaller footer font size */
+  }
+
+  /* Ensure content is properly aligned on small screens */
+  .filters {
+    display: flex;
+    flex-direction: column; /* Stack filters vertically */
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .dropdown-container {
+    margin: 10px 0;
+  }
+
+  /* Adjust the sidebar animation */
+  .sidebar.open {
+    width: 100%; /* Make the sidebar full-width on small screens */
+  }
+
+  .menu {
+    align-items: flex-start; /* Align menu items to the left */
+  }
+}
+
+/* Media Query for Extra Small Screens (Mobile) */
+@media only screen and (max-width: 480px) {
+  /* Further reduce the size of the hamburger button */
+  .menu-button {
+    font-size: 20px; /* Even smaller button size */
+    padding: 5px 8px; /* Even smaller padding */
+  }
+
+  /* Reduce the width of the sidebar */
+  .sidebar {
+    width: 180px; /* Smaller width */
+  }
+
+  /* Adjust the font size of menu items */
+  .menu a {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  /* Adjust footer text size further */
+  .footer {
+    font-size: 0.7rem; /* Even smaller footer font size */
+  }
+
+  /* Stack content in the middle for mobile screens */
+  .filters {
+    flex-direction: column; /* Stack filters vertically */
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .dropdown-container {
+    margin: 5px 0; /* Reduce margin between dropdowns */
+  }
+
+  /* Adjust the sidebar animation */
+  .sidebar.open {
+    width: 100%; /* Full width for sidebar */
+  }
+
+  .menu {
+    align-items: center; /* Center menu items */
+  }
+}
+
+/* MainContent.css
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 4rem;
+  color: #00e676;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: #333;
+} */

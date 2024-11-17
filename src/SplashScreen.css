@@ -1,0 +1,60 @@
+/* SplashScreen.css */
+.splash-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000; /* Dark background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    animation: fade-out 6s forwards; /* Fades out after 3 seconds */
+  }
+  
+  .splash-screen .logo {
+    text-align: center;
+    color: #00e676; /* Bright green text */
+    font-family: "Arial", sans-serif;
+    animation: bounce-in 1s ease-out;
+  }
+  
+  .splash-screen .logo h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .splash-screen .logo p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    color: #ffffff; /* Subheading in white */
+  }
+  
+  /* Animation for the logo bounce-in */    
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Fade-out animation for splash screen */
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
