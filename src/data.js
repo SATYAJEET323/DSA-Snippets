@@ -47,10 +47,10 @@ export const codes = [
 
     // Palindrome ---------------
     {
-        id: 6,
+        id: 7,
         title: 'Palindrome',
         code: 'class Solution(object): def isPalindrome(self, x): \nif x < 0:\n return False \noriginal = x\n   reversed_num = 0  \nwhile x > 0:\n last_digit = x % 10 \nreversed_num = reversed_num * 10 + last_digit \n x = x // 10 \n return original == reversed_num',
-        difficulty: 'easy',
+        difficulty: 'hard',
         language: 'Python',
       },
   
